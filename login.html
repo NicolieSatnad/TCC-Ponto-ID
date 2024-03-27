@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main1.css">
+
+
+    <div class="box-degrade">
+    <div class="page">
+        <form method="POST" action="login.php" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="cod_matricula">RM</label>
+            <input type="text" name="cod_matricula" placeholder="Digite seu rm" autofocus="true" />
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Digite sua senha" />
+
+            <label for="setor">Setor</label>
+
+            <p>
+            <input type="radio" name="setor" value="professor">Professor
+            <input type="radio" name="setor" value="funcionario">Funcionário</P>
+           
+ 
+            
+            <input type="submit" value="Acessar" class="btn"/>
+
+            <a href="loginADM.html">
+                <h3>Logar como administrador</h3></a>
+                    
+                 <a href="cadastro.html">
+                     <h3>Não possui login</h3></a>
+                    
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

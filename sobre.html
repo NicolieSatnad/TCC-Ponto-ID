@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="barra.css">
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="perfil.php">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <span class="title">Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="ponto.html">
+                    <span class="icon"><i class="fa-solid fa-calendar-xmark"></i></span>
+                    <span class="title">Ponto</span>
+                </a>
+            </li>
+            <li>
+        
+                <a href="sobre.html">
+                    <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li> 
+            <li>
+                <a href="login.html">
+                    <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                    <span class="title">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div> 
+    <div class="box-degrade">
+        <section class="sobre" id="sobre">
+        <h2 class="heading">SOBRE NÓS <br>
+            <span>PONTOID.</span></h2>
+    
+        <div class="services-container">
+            <div class="services-box">
+                <img src="pessoas.png">
+                <h3>Quem somos</h3>
+                <p>Somos um grupo de TCC formado por 5 alunos do curso Tecnico de Analise e Desenvolvimento de Sistemas - ETIM.</p>
+           
+                </div>
+                <div class="services-box">
+                    <img src="gerenciamento-de-projetos.png">
+                    <h3>Nosso projeto</h3>
+                    <p>Desenvolvemos o projeto para auxiliar a administração na organização da entrada e saída de professores e funcinários da nossa escola.</p>
+                
+                    </div>
+                    <div class="services-box">
+                        <img src="objetivo.png">
+                        <h3>Nosso objetivo</h3>
+                        <p>O objetivo do projeto é transformar um sistema arcaico e insustentável em algo inovador e tecnológico, diferenciando nossa escola e auxiliando os funcionários.</p>
+                   
+                        </div>
+        </div>
+</div>
+    
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+   
+</body>
+</html>

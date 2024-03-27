@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media (max-width: 1200px){
+    .page{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+   .h1{
+       text-align: center;
+   }
+}
+
+@media (max-width: 1100px){
+   .page{
+       width: 100%;
+
+   }
+}
+@media (max-width: 1024px){
+    .page{
+        width: 100%;
+    }
+ }
+ @media (max-width: 991px){
+    .page{
+        width: 100%;
+    }
+
+     .h1{
+        text-align: center;
+    }
+ }
+
+@media (max-width: 768px){
+   .page{
+       width: 100%;
+       flex-direction: column;
+    }
+
+    .h1{
+       text-align: center;
+   }
+ 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #023047
+}
+
+.box-degrade{
+    width: 100%;
+    padding: 480.5px 0;
+    display: flex;
+    text-align: left;   
+    float: left;
+    background-image: linear-gradient(to left, rgb(180, 235, 192), rgb(114, 150, 122));    
+    background-size: 500% 100%;
+    animation: degrade-animado 2s infinite alternate;
+}
+@keyframes degrade-animado{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+        min-height: auto;
+        margin-bottom: -5rem;
+        margin-top: -25%;
+    }
+
+
+
+.divs{
+    width: 80%;
+    min-width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formOco {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.areaOCO img {
+    width: 420px;
+}
+
+.formOco h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.formOco p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.formOco input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+
+.formOco input:focus {
+    border: 1px solid #aef72521;
+}
+
+.formOco label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formOco a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.formOco a:hover {
+    color: #5a8865;
+}
+
+.btn {
+    background-color: #5a8865;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #466351;
+
+}

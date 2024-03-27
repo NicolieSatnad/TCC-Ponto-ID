@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ponto</title>
+    <link rel="stylesheet" href="barra.css">
+    <link rel="stylesheet" href="ponto.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+  
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="perfil.php">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <span class="title">Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="ponto.html">
+                    <span class="icon"><i class="fa-solid fa-calendar-xmark"></i></span>
+                    <span class="title">Ponto</span>
+                </a>
+            </li>
+         
+            <li>
+                <a href="sobre.html">
+                    <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li> 
+            <li>
+                <a href="login.html">
+                    <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                    <span class="title">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div> 
+
+    
+ <script>
+    function atualizaRelogio(){ 
+        var momentoAtual = new Date();
+        
+               var hora = momentoAtual.getHours();
+                var minuto = momentoAtual.getMinutes();
+                var segundo = momentoAtual.getSeconds();
+                
+                var dia = momentoAtual.getDate();
+                var mes = momentoAtual.getMonth() + 1;
+                var ano = momentoAtual.getFullYear();
+                
+                if (dia < 10){ dia = "0" + dia;}
+                if (mes < 10){ mes = "0" + mes;}
+                if (hora < 10){ hora = "0" + hora;}
+                if (minuto < 10){ minuto = "0" + minuto;}
+                if (segundo < 10){ segundo = "0" + segundo;}
+    
+                dataFormat = dia + " / " + mes + " / " + ano;
+                horaFormat = hora + " : " + minuto + " : " + segundo;
+    
+                document.getElementById("data").innerHTML = dataFormat;
+                document.getElementById("hora").innerHTML = horaFormat;
+
+        setTimeout("atualizaRelogio()",1000);
+    }
+</script>
+
+
+    <div class="box-degrade">
+
+
+   <div class="page">
+
+
+
+        <form action="ponto.php" method="POST" class="formOco">
+
+            <script type="text/javascript">
+                jQuery(window).load(function($){
+                    atualizaRelogio();
+
+                });
+            </script>
+            <h1>Ponto</h1>
+            <p>Digite o RM para marcar o horário de entrada/saída.</p>
+            
+            <label for="cod_matricularm">RM</label>
+            <input type="text" name="matricula" placeholder="Digite o RM" /><br>
+
+            	<p>Digite seu nome.</p>
+            <label for="cod_matricularm">Nome</label>
+            <input type="text" name="nome" placeholder="Digite o nome" /><br>
+
+        <p1 id="hora"></p1>
+        <p1 id="data"></p1><br>
+            <input type="submit" value="Salvar" name="Salvar" class="btn"/>
+
+        </form>
+    </div>
+</div>
+ </section>
+    
+ <div class="toggle" onclick="toggleMenu();"></div>
+ <script type="text/javascript">
+     function toggleMenu(){
+         let navigation = document.querySelector('.navigation');
+         let toggle = document.querySelector('.toggle');
+         navigation.classList.toggle('active');
+         toggle.classList.toggle('active');
+     }
+ </script>
+
+
+
+	
+
+</body>
+</html>

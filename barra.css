@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media (max-width: 1200px){
+    .page{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+   .h1{
+       text-align: center;
+   }
+}
+
+@media (max-width: 1100px){
+   .page{
+       width: 100%;
+
+   }
+}
+@media (max-width: 1024px){
+    .page{
+        width: 100%;
+    }
+ }
+ @media (max-width: 991px){
+    .page{
+        width: 100%;
+    }
+
+     .h1{
+        text-align: center;
+    }
+ }
+
+@media (max-width: 768px){
+   .page{
+       width: 100%;
+       flex-direction: column;
+    }
+
+    .h1{
+       text-align: center;
+   }
+ 
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-size: 100%;
+    background-color: #e7f1e3;
+}
+
+.container{
+    box-sizing: border-box;
+    background: mintcream;
+    border-radius: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.box-degrade{
+    width: 100%;
+    padding: 480.5px 0;
+    display: flex;
+    text-align: right;   
+    float: right;
+    background-image: linear-gradient(to left, rgb(180, 235, 192), rgb(114, 150, 122));    
+    background-size: 500% 100%;
+    animation: degrade-animado 2s infinite alternate;  
+}
+@keyframes degrade-animado{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.head{
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.navigation{
+    position: fixed;
+    width: 90px;
+    height: 100%;
+    padding: 40px 0 40px 1%; 
+    background: #5a8865;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active,
+.navigation:hover {
+    width: 300px;
+}
+.navigation ul {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; 
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: #537e5d;
+}
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 90px;
+    margin-left: 20px;
+}
+.navigation ul li a .icon .fa-solid{
+    font-size: 40px;
+}
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    height: 90px;
+    line-height: 90px;
+    text-align: start;
+    white-space: nowrap;
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #5a8865;
+    cursor: pointer;
+}
+.toggle.active{
+    background: #5a8865;
+}
+.toggle:before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle.active:before{
+    content: '\f00d'; 
+}
+
+@media (max-width:767px){
+    .navigation{
+        left: -90px;
+    }
+    .navigation.active{
+        left: 0px;
+        width: 100%;
+    }
+}

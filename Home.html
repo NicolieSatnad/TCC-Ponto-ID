@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="barra.css">
+    <title>Perfil Funcionário</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="perfil.php">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <span class="title">Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="ponto.html">
+                    <span class="icon"><i class="fa-solid fa-calendar-xmark"></i></span>
+                    <span class="title">Ponto</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="sobre.html">
+                    <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li> 
+            <li>
+                <a href="login.html">
+                    <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                    <span class="title">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>         
+    <div class="box-degrade"></div>
+           
+   
+</div>
+    
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+   
+</body>
+</html>
